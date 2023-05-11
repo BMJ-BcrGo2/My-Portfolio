@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            index
+        </title>
+        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">      
+    </head>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            background: url(wallhaven-4285vg.jpg);
+            background-color: rgb(63, 61, 61);
+        }
+        body section{
+            color: white;
+        }
+        .fwh-slide{
+            height: 90vh;
+            background: rgba(59, 31, 31, 0.856);
+            margin: 0;
+            padding: 35px;
+        }
+        .fwh-slide2{
+            background: rgba(59, 31, 31, 0.747);
+            height: 30vh;
+        }
+        .box{
+            width: 450px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            text-align: center;
+            margin: auto;
+            margin-top: 5%;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .box-img{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .box h1{
+            font-size: 40px;
+            letter-spacing: 4px;
+            font-weight: 100;
+        }
+
+        .box h5{
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+
+        nav{
+            width: 100%;
+            height: 100px;
+            background-color:rgb(0, 0, 0);
+        }
+
+        .box p{
+            text-align: justify;
+        }
+
+        ul{
+            margin-left: 60px;
+        }
+
+        ul li{
+            list-style: none;
+            display: inline-block;
+            float: left;
+            line-height: 100px;
+        }
+
+        ul li a{
+            text-decoration: none;  
+            font-size: 14px;
+            font-family: Arial;
+            color: rgb(255, 255, 255);
+            padding: 0 20px;
+            display: block;
+        }
+        ul li a:hover{
+            color: rgb(151, 7, 7);
+        }
+        .PC1-img{
+            width: 250px;
+            border-radius: 15%;
+            height: fit-content;
+            margin: 0;
+            margin-right: 150px;
+        }
+        .paragraph{
+            text-align: justify;
+            width: 350px;
+            font-size: 20px;
+            font-weight: 20;
+            line-height: normal;
+            display: inline-block;
+        }
+        .image-container{
+            white-space: nop;
+        }
+        .paragraph p{
+            display: inline-block;
+            margin-right: auto;
+
+        }
+        .fp{
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+            text-align: center;
+        }
+        .lists-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+        
+
+        .lists-container ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+            width: fit-content;
+        }
+
+        .lists-container ul li {
+            margin-right: 50px;
+            line-height: 1.0;
+        }
+        .table-containt{
+            border-collapse: collapse;
+            margin: 25px 0;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px;
+            border: 2px solid black;
+        }
+        .table-containt tr{
+            text-align: left;
+            font-weight: bold;
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        .table-containt th, .table-contain td{
+            padding: 12px 15px;
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        .table-contain tbody tr{
+            border-bottom: 1px solid;
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        .footer{
+            background-color: #000000;
+            padding: 20px;
+            padding-top: 40px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .footer-content{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-content h3{
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+        .footer p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 20px;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem;
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: rgb(255, 252, 252);
+        }
+        .socials a i{
+            font-size: 1,1rem;
+            transition: color .4s ease;
+            color: wheat;
+        }
+        .socials a:hover i{
+            color: aqua;
+        }
+        .footer-bottom{
+            background: #000000;
+            width: 100vw;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-bottom p{
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .footer-bottom span{
+            text-transform: uppercase;
+            opacity: 4;
+            font-weight: 200;
+        }
+
+
+    </style>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/BMJ/Documents/Programmimg%20Practice/HTML/Pc%20Part%20Builder/Home.html">Home</a></li>
+                <li><a href="file:///C:/Users/BMJ/Documents/Programmimg%20Practice/HTML/Pc%20Part%20Builder/Shop">Shop</a></li>
+                <li><a href="file:///C:/Users/BMJ/Documents/Programmimg%20Practice/HTML/Pc%20Part%20Builder/About%20me.html">About Me</a></li>
+                <li><a href="file:///C:/Users/BMJ/Documents/Programmimg%20Practice/HTML/Pc%20Part%20Builder/Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="box">
+            <img src="IMG_20220805_175304_928.jpg" alt="" class="box-img">
+            <h1>Belcher Mjumira</h1>
+            <h5>PC builder - Video Editor</h5>
+            <p>Builds costom desktop computers for office work, video editing and animations and for high-end gaming. Also create and edit videos for music production or for YouTube channels. Skilled in the use o Adobe application such as Premiere pro and AfterEfects</p>
+        </div>
+        <section id="Featured Projects" class="fwh-slide"> 
+            <p>
+                <h2 class="fp">Featured Projects</h2>
+                <ul>
+                    <li>
+                        <div class="image-container">
+                        <img src="PC1.jpg" class="PC1-img">
+                        <img src="PC2.jpg" class="PC1-img">
+                        <img src="PC3.jpg" class="PC1-img">
+                        </div>
+                        <div class="lists-container">
+                            <ul>
+                                <li>Name: ASUS Z3 PRO</li>
+                                <li>CPU: intel i5 13500</li>
+                                <li>GPU: Nvidia RTX 4090</li>
+                                <li>RAM: 32GB DDR5 Dual channel memory</li>
+                                <li>Storage: 1TB SSD + 500GB HDD</li>
+                                <li>Power Supply: 800W PSU</li>
+                            </ul>
+                            <ul>
+                                <li>Name: Gigabyte Zeno 7</li>
+                                <li>CPU: AMD Ryzen 5 5500</li>
+                                <li>GPU: AMD RX 6600</li>
+                                <li>RAM: 64GB DDR5 Quad channel memory</li>
+                                <li>Storage: 500GB SSD + 1TB HDD</li>
+                                <li>Power Supply: 900W PSU</li>
+                            </ul>
+                            <ul>
+                                <li>Name: ACER zen 3</li>
+                                <li>CPU: intel i7 8750</li>
+                                <li>GPU: Nvidia RTX 3060</li>
+                                <li>RAM: 16GB DDR4 dual channel memory</li>
+                                <li>Storage: 1TB SSD + 500GB HDD</li>
+                                <li>Power Supply: 750W PSU</li>
+                            </ul>
+                          </div>
+                          
+                    </li>
+                </ul>
+            </p>
+        </section>
+        <section class="fwh-slide2">
+            <p>
+                <h2 class="fp">Table Of list of skills, tools, and technologies</h2>
+                <table class="table-containt">
+                    <tr>
+                      <th>Skills</th>
+                      <th>Tools available</th>
+                      <th>technologies</th>
+                    </tr>
+                    <tr>
+                      <td>Conmupter building</td>
+                      <td>Conmupter maintainance</td>
+                      <td>Conmupter repair</td>
+                    </tr>
+                    <tr>
+                      <td>Anti_static braclets</td>
+                      <td>Thermal paste</td>
+                      <td>Computer toolkit</td>
+                    </tr>
+                    <tr>
+                      <td>CPU liquid coolers</td>
+                      <td>High-end curve monitors</td>
+                      <td>streaming equipment</td>
+                    </tr>
+                  </table>
+            </p>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>code opacity</h3>
+                <p>Belcher Mjumira</p>
+                <ul class="socials">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <li><a href="https://twitter.com/home"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@bcr_go2?is_from_webapp=1&sender_device=pc"><i class="fa fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom"></div>
+            <p>copyright &copy;2023. designed by <span>Gamer</span></p>
+    </body>
+
+</html>

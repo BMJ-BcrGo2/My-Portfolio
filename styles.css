@@ -59,7 +59,17 @@ nav{
 .box p{
     text-align: justify;
 }
-
+.slideshow-container{
+    height: 500px;
+    width: 950;
+    box-shadow: 7px 3px 21px 7px rgba(219,16,16,0.88);
+    -webkit-box-shadow: 7px 3px 21px 7px rgba(219,16,16,0.88);
+    -moz-box-shadow: 7px 3px 21px 7px rgba(219,16,16,0.88);
+}
+.slideshow-img img{
+    height: 500px;
+    width: 423px;overflow: hidden;
+}
 ul{
     margin-left: 60px;
 }

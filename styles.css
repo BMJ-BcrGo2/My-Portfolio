@@ -68,7 +68,8 @@ nav{
 }
 .slideshow-img img{
     height: 500px;
-    width: 423px;overflow: hidden;
+    width: 423px;
+    overflow: hidden;
 }
 ul{
     margin-left: 60px;
